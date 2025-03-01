@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QQ</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+	<div class="all-box">
+
+		<div class="select-game">
+
+
+			<input class="search" type="text" id="searchBox" placeholder="search">
+
+			
+
+			<div class="line"></div>
+			
+
+			<div class="all-game">
+
+
+				<div class="game-box-select">
+					<img src="img/NFS RIVALS.jpg">
+					<a href="#" onclick="displayContent(event, 'NFS RIVALS', 'img/NFS RIVALS.jpg', 'Processor: Intel Core 2 Duo', 'Memory: 4 GB RAM', 'Graphics: NVIDIA 8800GT', 'DirectX: Version 09' , 'Storage: 30 GB available space' , 'img/game-img/NFS RIVALS/1.jpg' , 'img/game-img/NFS RIVALS/2.jpg' , 'img/game-img/NFS RIVALS/3.jpg' , 'img/game-img/NFS RIVALS/4.jpg' , 'SIZE : 7GB' , 'DATA : 19 Nov, 2013')">NFS RIVALS</a>
+				</div>
+
+				<div class="game-box-select">
+					<img src="img/NFS PAYBACK.jpg">
+					<a href="#" onclick="displayContent(event, 'NFS PAYBACK', 'img/NFS PAYBACK.jpg', 'Processor: Intel i3 6300', 'Memory: 6 GB RAM', 'Graphics: NVIDIA GTX 750', 'DirectX: Version 11' , 'Storage: 30 GB available space' , 'img/game-img/NFS PAYBACK/1.jpg' , 'img/game-img/NFS PAYBACK/2.jpg' , 'img/game-img/NFS PAYBACK/3.jpg' , 'img/game-img/NFS PAYBACK/4.jpg' , 'SIZE : 14GB' , 'DATA : 6 Nov, 2017')">NFS PAYBACK</a>
+				</div>
+
+				<div class="game-box-select">
+					<img src="img/TEKKEN 7.jpg">
+					<a href="#" onclick="displayContent(event, 'TEKKEN 7', 'img/TEKKEN 7.jpg', 'Processor: Intel i3 4160', 'Memory: 6 GB RAM', 'Graphics: NVIDIA GTX 660', 'DirectX: Version 11' , 'Storage: 60 GB available space' , 'img/game-img/TEKKEN 7/1.jpg' , 'img/game-img/TEKKEN 7/2.jpg' , 'img/game-img/TEKKEN 7/3.jpg' , 'img/game-img/TEKKEN 7/4.jpg' , 'SIZE : 40GB' , 'DATA : 1 Jun, 2017')">TEKKEN 7</a>
+				</div>
+
+				<div class="game-box-select">
+					<img src="img/ASSASSINS CREED ROGUE.jpg">
+					<a href="#" onclick="displayContent(event, 'ASSASSINS CREED ROGUE', 'img/ASSASSINS CREED ROGUE.jpg', 'Processor: Intel Core 2 Quad', 'Memory: 2 GB RAM', 'Graphics: NVIDIA GTS 450', 'DirectX: Version 09' , 'Storage: 12 GB available space' , 'img/game-img/ASSASSINS CREED ROGUE/1.jpg' , 'img/game-img/ASSASSINS CREED ROGUE/2.jpg' , 'img/game-img/ASSASSINS CREED ROGUE/3.jpg' , 'img/game-img/ASSASSINS CREED ROGUE/4.jpg' , 'SIZE : 4GB' , 'DATA : . ..., 2015')">ASSASSINS CREED ROGUE</a>
+				</div>
+				
+
+
+			</div>
+
+		</div>
+
+		
+		<div class="show-game">
+
+			<div class="cover-show-game">
+				<img id="myImage" src="img/NFS PAYBACK.jpg"> 
+				<p id="display">NFS PAYBACK</p>			
+
+				<div class="download-show-game">
+					<a  id="myLink" href="#">DOWNLOAD</a>
+				</div>
+
+				<div class="info-show-game-titel">
+					<p>ABOUT GAME</p>
+				</div>
+				
+
+				<div class="info-show-game">
+					<p id="extraText6">SIZE : 14GB</p>
+					<p id="extraText7">DATA : 6 Nov, 2017</p>
+					<p>FORMAT : rar - exe - iso</p>
+					<p>PASS : NO PASS</p>
+				</div>
+
+				<div class="info-show-game-titel">
+					<p>MINIMOM PC</p>
+				</div>
+
+				<div class="info-show-game">
+					<p>OS: 64-bit Windows 7 or later</p>
+					<p id="extraText1">Processor: Intel i3 6300</p>
+					<p id="extraText2">Memory: 6 GB RAM</p>
+					<p id="extraText3">Graphics: NVIDIA GTX 750</p>
+					<p id="extraText4">DirectX: Version 11</p>
+					<p id="extraText5">Storage: 30 GB available space</p>
+				</div>
+				
+			</div>
+
+  
+			<div class="img-show-game" onclick="changeColor(this)">
+				<img id="myImage2" src="img/game-img/NFS PAYBACK/1.jpg" alt="Image" onclick="openInNewTabimg(this.src)" style="cursor: pointer;">
+				<img id="myImage3" src="img/game-img/NFS PAYBACK/2.jpg" alt="Image" onclick="openInNewTabimg(this.src)" style="cursor: pointer;">
+				<img id="myImage4" src="img/game-img/NFS PAYBACK/3.jpg" alt="Image" onclick="openInNewTabimg(this.src)" style="cursor: pointer;">
+				<img id="myImage5" src="img/game-img/NFS PAYBACK/4.jpg" alt="Image" onclick="openInNewTabimg(this.src)" style="cursor: pointer;">
+			</div>
+
+
+
+		</div>
+		
+	</div>
+
+
+    <script>
+        function openInNewTabimg(url) {
+            window.open(url, '_blank');
+        }
+		
+        function displayContent(event, text, imgSrc, extraText1, extraText2 ,extraText3,extraText4,extraText5, imgSrc2, imgSrc3, imgSrc4, imgSrc5, extraText6, extraText7) {
+            event.preventDefault();
+            document.getElementById('display').innerText = text;
+            document.getElementById('myImage').src = imgSrc;
+            document.getElementById('extraText1').innerText = extraText1;
+            document.getElementById('extraText2').innerText = extraText2;
+			document.getElementById('extraText3').innerText = extraText3;
+			document.getElementById('extraText4').innerText = extraText4;
+			document.getElementById('extraText5').innerText = extraText5;
+			document.getElementById('myImage2').src = imgSrc2;
+			document.getElementById('myImage3').src = imgSrc3;
+			document.getElementById('myImage4').src = imgSrc4;
+			document.getElementById('myImage5').src = imgSrc5;
+			document.getElementById('extraText6').innerText = extraText6;
+			document.getElementById('extraText7').innerText = extraText7;
+        }
+
+
+		document.getElementById("myLink").addEventListener("click", function() {
+            var paragraphValue = document.getElementById("display").innerText;
+            if (paragraphValue == "NFS PAYBACK") {
+                window.location.href = "https://www.magbaazi.ir/1318/download-the-game-need-for-speed-payback-for-pc/";
+            } else if (paragraphValue == "NFS RIVALS") {
+                window.location.href = "https://www.magbaazi.ir/6949/need-for-speed-rivals/";
+			} else if (paragraphValue == "TEKKEN 7") {
+                window.location.href = "https://www.magbaazi.ir/6949/need-for-speed-rivals/";
+			} else if (paragraphValue == "ASSASSINS CREED ROGUE") {
+                window.location.href = "https://www.magbaazi.ir/6949/need-for-speed-rivals/";					
+            } else {
+                alert("Paragraph value is neither 2 nor 7!");
+            }
+        });
+		
+
+
+
+        function search() {
+            var searchQuery = document.getElementById("searchBox").value.toLowerCase();
+            var divs = document.getElementsByClassName("game-box-select");
+
+            for (var i = 0; i < divs.length; i++) {
+                var text = divs[i].innerText.toLowerCase();
+                if (text.includes(searchQuery)) {
+                    divs[i].classList.add("highlight");
+                } else {
+                    divs[i].classList.remove("highlight");
+                }
+            }
+
+            if (searchQuery === "") {
+                for (var i = 0; i < divs.length; i++) {
+                    divs[i].classList.remove("highlight");
+                }
+            }
+        }
+
+        document.getElementById("searchBox").addEventListener("input", search);
+	
+    </script>
+
+
+
+
+
+</body>
+</html>
