@@ -213,7 +213,12 @@ body {
     font-size: 20px;
     line-height: 20px;
     word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
+
+
 
 .info-show-game-titel{
     background-color: #1111112d;
