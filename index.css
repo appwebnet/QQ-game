@@ -31,7 +31,7 @@ body {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-
+ه
 
 ::-webkit-scrollbar{
     width: 0px;
@@ -84,12 +84,11 @@ body {
         width: 40px;
         border-radius: 5px;
     }
-    .game-box-select a{
+    .game-box-select p{
         color: #dddddd;
         line-height: 0px;
         margin-left: 10px;
-        padding-top: 20px;
-        text-decoration: none;
+        padding-top: 20px;        
     }
     .all-game{
         overflow-y: auto;
@@ -101,6 +100,7 @@ body {
 
     .img-show-game img{
         box-shadow: #151515c5 0px 1px 2px;
+        margin: 2px;
         border-radius: 3px;
         min-width: 200px;
         width: 20%;
@@ -108,6 +108,13 @@ body {
 
 
 }
+
+.all-game a{
+    text-decoration: none;
+}
+
+
+
 /*موبایل*/
 @media (max-width: 767px
 ){
@@ -141,6 +148,7 @@ body {
         width: auto;
         border-radius: 5px;
         margin-bottom: 10px;
+        width: 290px;
     }
     .game-box-select img{
         width: 40px;
@@ -204,6 +212,7 @@ body {
     color: #ffffff;
     font-size: 20px;
     line-height: 20px;
+    word-wrap: break-word;
 }
 
 .info-show-game-titel{
